@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+skinparam UsecaseFontSize 12
+skinparam UsecaseFontName Papyrus
+skinparam defaultFontName "Arial"
+skinparam defaultFontSize 12
+
+actor Secretario
+actor ProfesorResponsable
+actor ProfesorVigilante
+
+usecase "Configurar detalles de examen" as UC1
+usecase "Solicitar vigilantes adicionales" as UC2
+usecase "Validar solicitud de vigilancia" as UC3
+usecase "Asignar vigilantes automáticamente" as UC4
+usecase "Confirmar vigilancia" as UC5
+usecase "Rechazar vigilancia" as UC6
+
+UC3 .> UC4 : include
+
+UC4 <-- Sistema
+Secretario --> UC1
+Secretario --> UC3
+ProfesorResponsable --> UC2
+ProfesorVigilante --> UC5
+ProfesorVigilante --> UC6
+
+@enduml
