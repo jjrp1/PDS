@@ -32,6 +32,46 @@ La Federación Española de Golf tiene mucho trabajo en los últimos años, de m
 
 # P2.B.1 – Centro Penitenciario
 
+Dados los últimos altercados y el alto nivel de población carcelaria, un centro penitenciario
+decide desarrollar una aplicación software que permita gestionar a los presos y trabajadores
+del mismo.
+
+Cuando un preso nuevo entra en el centro penitenciario se registra en el sistema indicando su
+DNI, su nombre, y su historial delictivo. Este historial está formado por las veces que el preso
+ha sido condenado por distintos tipos de delitos (desfalco fiscal, robo, homicidio, fuga, etc.)
+realizados a lo largo del tiempo. Por cada condena se registra la fecha en que se cometió el
+delito, fecha de entrada a la cárcel y la duración total de la condena. Una vez registrado, el
+preso automáticamente será asignado a una celda perteneciente a un módulo carcelario
+distinto según si ha cometido un delito de sangre o no. Así, un preso que haya cometido un
+delito de sangre será asignado al módulo de alta seguridad y si por el contrario sólo ha
+cometido delitos menores será asignado al módulo de baja seguridad. Una celda puede
+contener como mucho dos presos.
+
+Los trabajadores del centro penitenciario son guardias que trabajan dentro de un módulo y
+tienen asignada la vigilancia de 6 a 10 celdas consecutivas. Para evitar que los presos se
+familiaricen con los guardias, los trabajadores rotan en las distintas celdas y módulos cada
+mes. Esta asignación se realiza de manera aleatoria teniendo en cuenta que un mismo guardia
+no puede vigilar la misma celda en un periodo de un año. Además, sólo un guardia es
+supervisor de un módulo.
+
+Todos los días por la mañana y por la noche se realizan inspecciones en las celdas por cada
+guardia encargado de las mismas, que registrarán la inspección realizada, la fecha y hora que
+se ha realizado e indicará si ha habido algún incidente dentro de la misma como puede ser la
+detección de droga, armas, etc. Estas incidencias están tipificadas según el código carcelario
+internacional. En el caso de producirse una incidencia, el sistema avisará al alcaide quien
+tendrá que seleccionar un castigo para los presos de la celda según el incidente detectado.
+Una vez al año por Semana Santa se indulta a un preso que saldrá en la procesión del Domingo
+de Resurrección. Para ello, el sistema seleccionará un listado de presos candidatos a ser
+indultados. Para poder formar parte de ese listado al preso debe quedarle menos de un año de
+condena y no se debe haber producido ninguna incidencia en su celda en el último año. De
+este listado de presos candidatos el alcaide seleccionará el preso que será indultado ese año.
+Por último, un preso podrá solicitar online el cambio de celda debido a desavenencias con su
+compañero. En este caso será el supervisor del módulo el encargado de decidir si se aprueba
+esa solicitud de cambio de celda o no.
+
+![UML-test-ejemplo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jjrp1/PDS/main/p2-b1.puml)
+
+
 # P2.B.2 – Centro de Salud
 
 Se quiere diseñar parte del sistema de información correspondiente a un centro de servicios médicos. Entre las personas relacionadas con este centro, podemos distinguir entre los pacientes y los trabajadores relacionados con los servicios (doctores, enfermeros, coordinadores, administrativos, etc.). Un trabajador estará acreditado para trabajar en al menos un servicio médico. Se registrará la fecha en la que se acreditó para trabajar en cada servicio. Cada trabajador puede estar asignado a un solo servicio (siempre que tenga la correspondiente acreditación). Cada servicio es identificado por un nombre y registraremos una breve descripción, sus áreas de especialidad médica y el coordinador del servicio.
