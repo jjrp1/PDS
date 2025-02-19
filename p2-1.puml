@@ -22,9 +22,12 @@ Asignatura "1" --> "*" Examen
 Profesor "1" --> "0..*" Asignatura : coordinador de 
 Profesor "1" --> "0..*" Examen : responsable de
 
+
+
 Examen "*" --> "1..*" Aula : se realiza en 
 Examen "1.." --> "1" Vigilancia : requiere 
 
+Vigilancia "1" --> "1..*" Profesor : realizada por 
 Vigilancia --> Secretario : validada por
 
 @enduml
