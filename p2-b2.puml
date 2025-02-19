@@ -11,8 +11,15 @@ class Trabajador
 class Sanitario extends Trabajador
 class Medico    extends Sanitario
 class Enfermero extends Sanitario
+class Cita
+class Adicional extends Cita
+class Medica    extends Cita
+class Paciente
 
-Trabajador -- Servicio : trabaja en >
+Paciente -right- Cita: solicita >
+Servicio -down- Cita : recibe solicitd de > 
+Trabajador -right- Servicio : trabaja en >
+
 
 @enduml
 ```
