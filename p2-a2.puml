@@ -13,6 +13,8 @@ class Torneo
 class Campo
 
 Jugador "1..*" -- "1" Torneo : registra en >
+Torneo "0..*" -- "1..*" Campo : se juega en >
+
 
 @enduml
 ```
