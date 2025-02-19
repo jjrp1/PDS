@@ -13,6 +13,8 @@ class Modulo
 class Modulo_A extends Modulo
 class Modulo_B extends Modulo
 class Delito
+class Preso
+class Historial
 class Condena
 class Guardia
 class Inspeccion
