@@ -13,15 +13,14 @@ class Asignatura
 class Examen 
 class Profesor 
 
-
-class Facultad
 class Secretario
 class Convocatoria 
-class Vigilancia 
+class SolicitudVigilante  
 
 Asignatura  "1..*" *-up-> "1" Titulacion : pertenece a 
-
 Asignatura "1" --> "*" Examen
+Asignatura "0..*" --> "1" Profesor
+
 Profesor "1" -right-> "0..*" Asignatura : responsable de
 Profesor "1" --> "0..*" Examen : responsable de
 
