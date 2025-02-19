@@ -1,3 +1,17 @@
 @startuml
+hide empty fields 
+hide empty attributes 
+hide empty methods
+hide empty members
+hide circle
+
+class Servicio
+class Trabajador
+class Sanitario extends Trabajador
+class Medico    extends Sanitario
+class Enfermero extends Sanitario
+
+Trabajador -- Servicio : trabaja en >
+
 
 @enduml
