@@ -1,0 +1,18 @@
+```plantuml
+@startuml
+hide empty fields 
+hide empty attributes 
+hide empty methods
+hide empty members
+hide circle
+
+class Jugador
+class Secretario
+class Caddie 
+class Torneo 
+class Campo
+
+Jugador "1..*" -- "1" Torneo : registra en >
+
+@enduml
+```
