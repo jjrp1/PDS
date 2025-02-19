@@ -11,6 +11,7 @@ class Aula
 class Asignatura 
 class Examen 
 class Profesor 
+class Turno
 
 class Secretario
 class Convocatoria 
@@ -21,13 +22,12 @@ Asignatura "1" --> "*" Examen
 
 Profesor "1" --> "0..*" Asignatura : coordinador de 
 Profesor "1" --> "0..*" Examen : responsable de
-
-
+Profesor "1..*" <-- "1" Vigilancia : realiza
 
 Examen "*" --> "1..*" Aula : se realiza en 
 Examen "1.." --> "1" Vigilancia : requiere 
+Examen "0..*" --> "1" Turno : tiene 
 
-Vigilancia "1" --> "1..*" Profesor : realizada por 
 Vigilancia --> Secretario : validada por
 
 @enduml
