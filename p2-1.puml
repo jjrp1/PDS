@@ -6,13 +6,16 @@ hide empty methods
 hide empty members
 hide circle
 
+
+class Titulacion 
+class Aula 
+class Asignatura 
+class Examen 
+class Profesor 
+
+
 class Facultad
 class Secretario
-class Profesor 
-class Asignatura 
-class Titulacion 
-class Examen 
-class Aula 
 class Convocatoria 
 class Vigilancia 
 
