@@ -69,8 +69,6 @@ Por último, un preso podrá solicitar online el cambio de celda debido a desave
 compañero. En este caso será el supervisor del módulo el encargado de decidir si se aprueba
 esa solicitud de cambio de celda o no.
 
-![P2.B.2](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jjrp1/PDS/main/p2-b2.puml)
-
 ![UML-test-ejemplo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jjrp1/PDS/main/p2-b1.puml)
 
 
@@ -82,7 +80,8 @@ Los pacientes piden una cita por internet para acudir a los servicios médicos p
 
 Si el tratamiento es una medicación, se registrará la dosificación (cada 24 horas, cada 12 horas…), la duración del tratamiento (en días), el compuesto activo y opcionalmente el nombre comercial del medicamento. Posteriormente, si el tratamiento lo requiere, el paciente puede solicitar una o varias visitas adicionales (para un tratamiento concreto). Posteriormente el sistema asigna automáticamente el doctor o enfermero que realizará el tratamiento correspondiente a cada visita. Los doctores están facultados para realizar tratamientos que no impliquen medicación. Los enfermeros no pueden diagnosticar pero si realizar tratamientos. Los pacientes pueden pagar directamente las visitas a través de la plataforma virtual, o bien pertenecer a una compañía asistencial (seguro médico). Para cada paciente se recogerá su nombre (nombre propio y apellidos), NIF, fecha de nacimiento, dirección (calle, ciudad, provincia), teléfonos de contacto, nombre y dirección de la empresa en la que trabajan, tipo de servicios que puede solicitar y forma de pago. Para las compañías asistenciales se recogerá su NIF, nombre y dirección (calle, ciudad, provincia, código postal), y teléfono. Cada final de mes el sistema generará las facturas que se remitirán a las compañías asistenciales. 
 
-![UML-test-ejemplo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jjrp1/PDS/main/p2-b2.puml)
+
+![P2.B.2](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jjrp1/PDS/main/p2-b2.puml)
 
 
 # Ejemplo
