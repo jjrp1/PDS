@@ -1,3 +1,10 @@
 @startuml
+class Alcalde
+class Castigo
+class Celda
+class CentroPenitenciario
+class Modulo
+class Modulo_A extends Modulo
+class Modulo_B extends Modulo
 
 @enduml
