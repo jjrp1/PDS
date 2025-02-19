@@ -1,4 +1,10 @@
 @startuml
+hide empty fields 
+hide empty attributes 
+hide empty methods
+hide empty members
+hide circle
+
 class Alcalde
 class Castigo
 class Celda
@@ -6,5 +12,12 @@ class CentroPenitenciario
 class Modulo
 class Modulo_A extends Modulo
 class Modulo_B extends Modulo
+class Delito
+class Condena
+class Guardia
+class Inspeccion
+class Incidente
+class Armas extends Incidente
+class Drogas extends Incidente
 
 @enduml
