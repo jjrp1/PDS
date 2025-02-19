@@ -1,0 +1,28 @@
+```plantuml
+@startuml
+hide empty fields 
+hide empty attributes 
+hide empty methods
+hide empty members
+hide circle
+
+class Facultad
+class Secretario
+class Profesor 
+class Asignatura 
+class Titulacion 
+class Examen 
+class Aula 
+class Convocatoria 
+class Vigilancia 
+
+Asignatura  "1..*" *-up-> "1" Titulacion : pertenece a 
+
+Asignatura "1" --> "*" Examen
+Profesor "1" -right-> "0..*" Asignatura : responsable de
+Profesor "1" --> "0..*" Examen : responsable de
+
+Examen "1.." -left-> "1" Convocatoria : corresponde a 
+
+@enduml
+```
