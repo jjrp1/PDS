@@ -13,12 +13,15 @@ class Examen
 class Profesor 
 class Turno
 
+class Tarde extends Turno
+class Diurno extends Turno
+
 class Secretario
 class Convocatoria 
 class Vigilancia  
 
 Asignatura  "1..*" *--> "1" Titulacion : pertenece a 
-Asignatura "1" --> "*" Examen
+Asignatura "1" -- "*" Examen : tiene > 
 
 Profesor "1" --> "0..*" Asignatura : coordinador de 
 Profesor "1" --> "0..*" Examen : responsable de
