@@ -12,7 +12,19 @@ El secretario de la facultad recibe una notificación cada vez que se solicitan 
 
 ![UML-test-ejemplo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jjrp1/PDS/main/p2-1.puml)
 
-# P2 - Ejercicio 2 (Golf)
+> **NOTAS**: Representamos `turno` como una generalización de `Diurno` y `Tarde` por indicaciones del profesor.
+
+# P2.2.a (Golf)
+
+La Federación Española de Golf tiene mucho trabajo en los últimos años, de manera que ha decidido crear una aplicación que gestione los jugadores, los torneos y los campos federados con las siguientes indicaciones:
+
+    Cada jugador podrá inscribirse en el sistema y registrarse en un torneo determinado. Si el jugador no dispone de caddie propio, el caddie master le asignará uno para jugar en dicho torneo.
+
+    Todos los jugadores tienen una clasificación (junior, sénior, aficionado, profesional, veterano) y un hándicap exacto. Los hándicaps tienen 5 categorías y se determinan según los resultados de los torneos disputados.
+
+    El sistema tiene que ir actualizando el hándicap automáticamente, y para ello en cada torneo el secretario del mismo tiene que registrar el resultado de cada jugador (número de golpes y número de puntos) en el torneo. El hándicap de cada jugador no se actualiza en ese momento, sino que se actualiza automáticamente cada domingo a las 12:00, y se publica en la web de la Federación.
+
+
 ![UML-test-ejemplo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jjrp1/PDS/main/p2-a2.puml)
 
 
