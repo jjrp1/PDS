@@ -6,7 +6,6 @@ hide empty methods
 hide empty members
 hide circle
 
-
 class Titulacion 
 class Aula 
 class Asignatura 
@@ -15,16 +14,18 @@ class Profesor
 
 class Secretario
 class Convocatoria 
-class SolicitudVigilante  
+class Vigilancia  
 
-Asignatura  "1..*" *-up-> "1" Titulacion : pertenece a 
+Asignatura  "1..*" *--> "1" Titulacion : pertenece a 
 Asignatura "1" --> "*" Examen
-Asignatura "0..*" --> "1" Profesor
 
-Profesor "1" -right-> "0..*" Asignatura : responsable de
+Profesor "1" --> "0..*" Asignatura : coordinador de 
 Profesor "1" --> "0..*" Examen : responsable de
 
-Examen "1.." -left-> "1" Convocatoria : corresponde a 
+Examen "*" --> "1..*" Aula : se realiza en 
+Examen "1.." --> "1" Vigilancia : requiere 
+
+Vigilancia --> Secretario : validada por
 
 @enduml
 ```
