@@ -69,7 +69,7 @@ Por último, un preso podrá solicitar online el cambio de celda debido a desave
 compañero. En este caso será el supervisor del módulo el encargado de decidir si se aprueba
 esa solicitud de cambio de celda o no.
 
-![UML-test-ejemplo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jjrp1/PDS/main/p2-b2.puml)
+![P2.B.2](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jjrp1/PDS/main/p2-b2.puml)
 
 ![UML-test-ejemplo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jjrp1/PDS/main/p2-b1.puml)
 
