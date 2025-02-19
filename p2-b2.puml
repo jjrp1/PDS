@@ -1,3 +1,4 @@
+```plantuml
 @startuml
 hide empty fields 
 hide empty attributes 
@@ -13,5 +14,5 @@ class Enfermero extends Sanitario
 
 Trabajador -- Servicio : trabaja en >
 
-
 @enduml
+```
